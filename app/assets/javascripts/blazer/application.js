@@ -18,9 +18,6 @@
 //= require ./queries
 //= require ./fuzzysearch
 
-import Highcharts from "highcharts";
-Chartkick.addAdapter(Highcharts);
-
 Vue.config.devtools = false
 Vue.config.productionTip = false
 
