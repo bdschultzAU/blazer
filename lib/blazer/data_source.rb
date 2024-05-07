@@ -62,6 +62,11 @@ module Blazer
       cache["mode"]
     end
 
+
+    def sql_establish_connection_param
+      settings["sql_establish_connection_param"]&.to_sym || settings["url"]
+    end
+
     def cache_expires_in
       (cache["expires_in"] || 60).to_f
     end
